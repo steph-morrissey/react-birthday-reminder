@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+import NavBar from './components/NavBar';
 import Routes from './Routes';
 
 function App() {
   return (
     <Router>
-      <h1>NavBar</h1>
+      <NavBar />
       <Routes />
     </Router>
   );

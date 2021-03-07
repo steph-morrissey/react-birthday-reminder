@@ -2,12 +2,13 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 // Page imports
-import Home from './pages/index';
+import Reminders from './pages/index';
+
 const Routes = () => {
   return (
     <Switch>
-      <Route path='/'>
-        <Home />
+      <Route path='/reminders'>
+        <Reminders />
       </Route>
     </Switch>
   );

@@ -1,7 +1,14 @@
 import React from 'react';
+import { Row, Col } from 'react-bootstrap';
 
-const Home = () => {
-  return <h1>Birthday Reminders</h1>;
+const Reminders = () => {
+  return (
+    <main>
+      <Row className='text-center'>
+        <Col>Todays Birthdays</Col>
+      </Row>
+    </main>
+  );
 };
 
-export default Home;
+export default Reminders;
