@@ -16,9 +16,9 @@ const Reminders = () => {
         setBirthdays([]);
 
         const { data } = await axios.get(URL);
-
+        console.log(data);
         setLoading(false);
-        setBirthdays(data.results);
+        setBirthdays(data.data);
       } catch (err) {
         setLoading(false);
         setBirthdays([]);
