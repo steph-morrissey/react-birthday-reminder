@@ -19,40 +19,38 @@ const NavBar = () => {
         BIRTHDAY REMINDERS.
       </Navbar.Brand>
       <Nav className='mr-auto'>
-        <Nav.Link>
-          <Link
-            to='/reminders'
-            style={{
-              textDecoration: 'none',
-              color: '#BAE5B4',
-            }}
-          >
-            Todays Birthdays
-          </Link>
-        </Nav.Link>
+        <Link
+          to='/reminders'
+          className='px-2'
+          style={{
+            textDecoration: 'none',
+            color: '#BAE5B4',
+          }}
+        >
+          Todays Birthdays
+        </Link>
 
-        <Nav.Link>
-          <Link
-            to='/monthly'
-            style={{
-              textDecoration: 'none',
-              color: '#B8E4E6',
-            }}
-          >
-            Birthday by Month
-          </Link>
-        </Nav.Link>
-        <Nav.Link>
-          <Link
-            to='/monthly'
-            style={{
-              textDecoration: 'none',
-              color: '#EBD3A3',
-            }}
-          >
-            Customise Reminders
-          </Link>
-        </Nav.Link>
+        <Link
+          to='/monthly'
+          className='px-2'
+          style={{
+            textDecoration: 'none',
+            color: '#B8E4E6',
+          }}
+        >
+          Birthday by Month
+        </Link>
+
+        <Link
+          to='/monthly'
+          className='px-2'
+          style={{
+            textDecoration: 'none',
+            color: '#EBD3A3',
+          }}
+        >
+          Customise Reminders
+        </Link>
       </Nav>
     </Navbar>
   );
