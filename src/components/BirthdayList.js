@@ -8,7 +8,9 @@ const BirthdayList = ({ title, birthdays }) => {
       <div>
         <Row>
           <Col className='text-center'>
-            <h2>{title}</h2>
+            <h2 style={{ fontFamily: 'Concert One, cursive' }}>
+              {title.toUpperCase()}
+            </h2>
           </Col>
         </Row>
         <Row>
@@ -27,7 +29,10 @@ const BirthdayList = ({ title, birthdays }) => {
     <div>
       <Row>
         <Col className='text-center'>
-          <h2>{title}</h2>
+          <h2 style={{ fontFamily: 'Concert One, cursive' }}>
+            {title.toUpperCase()}
+          </h2>
+          <i className='fas fa-birthday-cake'></i>
         </Col>
       </Row>
       <Row>
